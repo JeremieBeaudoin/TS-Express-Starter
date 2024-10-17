@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": ".",
+
+    "paths": {
+      "@/*": ["src/main/*"],
+      "@configuration/*": ["src/main/configuration/*"]
+    },
+
+    "lib": ["ESNext"],
+    "module": "Esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+
+    "types": [ "node", "express", "jest" ],
+
+    "outDir": "./ignored/dist",
+
+    "esModuleInterop": true,
+    "moduleDetection": "force",
+    "composite": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "allowJs": true
+  },
+
+  "include" : [
+    "src/main/**/*.ts",
+    "src/types/**/*.ts",
+    ".env"
+  ],
+
+  "exclude": [
+    "ignored",
+    "node_modules",
+    "src/logs",
+  ]
+}
